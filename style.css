@@ -142,7 +142,7 @@ li a:hover:not(.link-inicio){
 .textoMeio{    
     flex-wrap: wrap;
     position: absolute;
-    bottom: 23vw;
+    bottom: 15vw;
     text-align: justify;
     padding: 20px;
     font-size: 7vw;
@@ -152,7 +152,7 @@ li a:hover:not(.link-inicio){
 
 .textoMeio2{
     position: absolute;
-    bottom: 20.5vw;
+    bottom: 11.5vw;
     text-align: justify;
     padding: 20px;
     font-size: 2.5vw;
