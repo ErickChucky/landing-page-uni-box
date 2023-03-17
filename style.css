@@ -254,7 +254,7 @@ main button:hover {
     
   }
 
-  section.module.parallax{
+  section.module.parallax-1{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -323,7 +323,7 @@ main button:hover {
     padding: 0 20px;
     font-family: 'Kite One', sans-serif;
   }
-  section.module.parallax{
+  section.module.parallax-2{
     display: flex;
     flex-direction: column;
     justify-content: center;
