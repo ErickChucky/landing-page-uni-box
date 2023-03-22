@@ -143,7 +143,7 @@ li a:hover:not(.link-inicio){
     margin-top: 100px;
 }
 .h1-titulo-pincipal{    
-    font-size: 19vh;
+    font-size: 15vh;
     font-family: 'Squada One', cursive;
     margin: auto;
     
@@ -154,7 +154,7 @@ li a:hover:not(.link-inicio){
 
 }
 .logo-uni{
-    max-width: 650px;    
+    max-width: 610px;    
     margin: auto; 
     padding-bottom: 10px;   
 }
