@@ -1,14 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kite+One&family=Rubik+Mono+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Jockey+One&family=Kite+One&family=Rubik+Mono+One&family=Squada+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kite+One&family=Rubik+Mono+One&display=swap');
 
 *{
-   
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-   
+    padding: 0px;
 }
 
 
@@ -27,7 +21,8 @@ body{
     --cor6: #14aac8;  
     --cor7: #242424;
 }
- nav{    
+ nav{  
+    text-decoration: none;  
     position:fixed;
     z-index: 3000;
     top: 0;
@@ -37,6 +32,7 @@ body{
     background-color:var(--cor5);        
 }
 label.logo{
+    text-decoration: none;
     color: var(--cor0);
     font-size: 25px;
     line-height: 60px;
@@ -44,16 +40,19 @@ label.logo{
     font-weight: bold;
 }
 nav ul {
+    text-decoration: none;
     float: right;    
     margin-right:20px;
     margin-top: 8.5px;
 }
 nav ul li {
+    text-decoration: none;
     display: inline-block;
     line-height: 50px;
     margin: 0 5px;    
 }
 nav ul li a {
+    text-decoration: none;
     color: var(--cor0);
     font-size: 15px;
     padding: 7px 22px;
@@ -64,17 +63,19 @@ nav ul li a {
 
 li a:hover:not(.link-inicio){
     background-color: var(--cor0);
-    color: var(--cor5);    
-    transition-duration: .5s;
+    color: var(--cor6);    
+    transition-duration:.7s;
     border-radius: 5px;    
 }
 
 
 .link-inicio{
+    text-decoration: none;
     background-color:var(--cor6);
     color: var(--cor0);
 }
 .checkbtn{
+    text-decoration: none;
     font-size: 30px;
     color: var(--cor0);
     float: right;
@@ -126,137 +127,82 @@ li a:hover:not(.link-inicio){
         left: 0;
     }
 }
-/* -------------------------TERMINA A PARTE DO MENU-------------------------------------------------------------*/
 
+/* -----------------------TERMINA A PARTE DO MENU--------------------------------------------------------*/
 
-.conteiner{
-    width: 100%;
-    position: relative;
-    
-     
+.container{
+    min-width: 300px;
+    max-width: 1200px;
+    display: flex;
+    /*height: 100vh !important;*/
+    margin: 0 auto;
+    align-items:center;
+    justify-content:space-between;
+    gap: 20px;
+    flex-wrap:wrap;
+    margin-top: 100px;
 }
-.conteiner img{
-    width: 100%;    
-    background-position: right bottom;
-}
-.textoMeio{    
-    flex-wrap: wrap;
-    position: absolute;
-    bottom: 15vw;
-    text-align: justify;
-    padding: 20px;
-    font-size: 7vw;
+.h1-titulo-pincipal{    
+    font-size: 19vh;
     font-family: 'Squada One', cursive;
-    margin-left: 50px;
-}
-
-
-.textoMeio2{
-    position: absolute;
-    bottom: 11.5vw;
-    text-align: justify;
-    padding: 20px;
-    font-size: 2.5vw;
-    color: var(--cor6);
-    margin-left: 50px;
-    
-}
- 
-img{    
-    background-position: right bottom;        
-    width: 100%;  
-    padding-top: 30px;  
-    
-}
-/*
-img.pequena{
-    max-width: 350px;  
     margin: auto;
-}*/
-
-
-main h3{  
-    margin-top: 40px;
-    position: absolute;
-    margin-bottom: 3px;    
-    font-weight: normal;
-    color: var(--cor5);    
-    padding: 20px;
-    font-size: 80px;
-    font-family: 'Squada One', cursive;
+    
 }
-#linha-horizontal{
-    margin-top: 150px;
+.ajuste-picture-logo{
+    margin: auto;
+    
+
+}
+.logo-uni{
+    max-width: 650px;    
+    margin: auto; 
+    padding-bottom: 10px;   
+}
+#linha-horizontal{    
     width: 100%;
     border: 1px solid var(--cor6);
-    color: var(--cor6);    
+    color: var(--cor6);
+}   
+#titulo-sobre{     
+    margin: 20px auto;       
+    flex-wrap:wrap;
+    min-width: 300px;
+    max-width: 1190px;
+    padding-left: 20px;
 }
-
+#sobre{
+    font-size: 10vh;
+    font-family: 'Squada One', cursive;
+    display: flex;
+    flex-wrap:wrap; 
+    margin: 0 auto; 
+    margin-bottom: 25px;  
+}
 #sobre-h4{
     text-indent: -30px;
     font-weight: normal;
-    color: var(--cor5);    
-    padding: 60px 0 0 55px ;
-    font-size: 70px;
+    color: var(--cor6);    
+    margin: 0 auto;
+    font-size: 40px;
+    padding-left: 35px;
     font-family: 'Squada One', cursive;
 }
-
-
-main p{    
-    margin: 10px 40px;
-    margin-top: 50px;
+.paragrafo-1{
+    padding-right: 15px;
+    margin-top: 20px;
     text-align: justify;
     text-indent: 10px;
     line-height: 1.8em;
     font-size: 1.3em;
     font-family: 'Kite One', sans-serif;
 }
-
-
-main button {
-    color: var(--cor0);
-    background: var(--cor6);
-    height: 3.125rem;
-    width: 11.25rem;
-    font-size: 1.125rem;
-    border: none;
-    border-radius: 1.625rem;
-    cursor: pointer;
-    margin-left: 10px;  
-    margin-top: 40px;
-    margin-bottom: 30px;    
-}
-
-
-main button:hover {
-    background-color: var(--cor1);
-    border: 0.188rem solid var(--cor5);
-    transition: 0.5s;
-}
-
-.container-3{
-    font-size: 15px;
-    font-family: 'Kite One', sans-serif;
-
-}
-
-/* -----------test parallax----------------------------------*/
+/*----------------------------------test parallax------------------------------------------*/
 
 .wrapper{
     width: 100%;
     margin: 0 auto;
   }
-
-.container{    
-    width: 100%;
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 0 20px;
-    font-family: 'Kite One', sans-serif;
-    
-  }
-
-  section.module.parallax-1{
+section.module.parallax{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -273,7 +219,7 @@ main button:hover {
     -o-background-size: cover;
   }
   section.module.parallax:after{
-    content: "";
+    
     height: 100%;
     width: 100%;
     position: absolute;
@@ -281,51 +227,70 @@ main button:hover {
     background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
     background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
-  }
-  
-  
+  }  
   section.module.parallax-1{
     background-image: url("imagens-uni/Ilustra-para-site-1920x.png")
-  }
-  
+  }  
   section.module.parallax h1{
-    color: #FFF;
+    font-family: 'Squada One', cursive;
+    color:var(--cor6);
     text-align: center;
     font-size: 78px;
     z-index: 50;
     text-transform: uppercase;
   }
-  .texto-fontes{    
-    position: relative;
-    text-align: justify;
-    padding: 20px;
-    font-size: 80px;
+  /*----------------------------------fim primeiro parallax------------------------------------------*/
+
+  #titulo-fontes{
+    margin: 20px auto;       
+    flex-wrap:wrap;
+    min-width: 300px;
+    max-width: 1190px;
+    padding-left: 20px;
+  }
+
+  .texto-fontes{
+    font-size: 10vh;
     font-family: 'Squada One', cursive;
-}
-.imagem-grade-logo{    
-    width: 99,9%;      
-}
-.lista-u {
-    margin: 10px 20px;
-    margin-top: 50px;
-    text-align: justify;    
+    display: flex;
+    flex-wrap:wrap;
+  }
+  #texo-logo-01{
+    padding-right: 15px;
+    margin-top: 20px;
+    text-align: justify;
+    text-indent: 10px;
     line-height: 1.8em;
     font-size: 1.3em;
+    font-family: 'Kite One', sans-serif;
+  }
+
+  img{    
+    background-position: right bottom;        
+    width: 100%;  
+    padding-top: 30px;  
+    
 }
-/* ----------------------SEGUNDO PARALLAX--------------------------------*/
+
+ol{
+    
+    margin-top: 15px;
+    text-align: justify;
+    text-indent: 8px;
+    line-height: 1.2em;
+    font-size: 1em;
+    font-family: 'Kite One', sans-serif;
+    padding: 18px;
+    margin-left: 50px;
+
+}
+/*-------------parallax dois---------------------------------------------*/
+
 .wrapper2{
     width: 100%;
     margin: 0 auto;
   }
-
-.container{    
-    width: 100%;
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 0 20px;
-    font-family: 'Kite One', sans-serif;
-  }
-  section.module.parallax-2{
+  section.module.parallax{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -333,7 +298,7 @@ main button:hover {
     width: 100%;
     position: relative;
     overflow: hidden;
-    background-position: 50% 50%;
+    
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -350,36 +315,26 @@ main button:hover {
     background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
     background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
-  }
-  
-  
+  }  
   section.module.parallax-2{
     background-image: url("imagens-uni/Unieburro.jpg")
-  }
-  
+  }  
   section.module.parallax h1{
-    color: #FFF;
+    color: var(--cor6);
     text-align: center;
     font-size: 78px;
     z-index: 50;
     text-transform: uppercase;
   }
-  #linha-horizontal-2{
-    margin-top: 50px;
-    width: 100%;
-    border: 1px solid var(--cor6);
-    color: var(--cor6);
-  }
+  /*---------------fim do parallax dois-----------------------------------*/
   .container-2{
     
     display: flex;
     align-items: center;
     justify-content: center; 
     font-family: 'Kite One', sans-serif;
-    flex-wrap: wrap
-    
-   
-  }
+    flex-wrap: wrap;   
+}
   .botao-cores{
     background-color: #ff3399;
     width: 180px;
@@ -433,7 +388,6 @@ main button:hover {
     font-size: 30px;
     color: #ffffff;    
 }
-
 .botao-cores5{
     background-color: #f21f89;
     width: 180px;
@@ -447,21 +401,48 @@ main button:hover {
     font-size: 30px;
     color: #ffffff;    
 }
+main button:hover {
+    background-color: var(--cor6);
+    border: 0.188rem solid var(--cor1);
+    transition: 0.5s;
+}
+#linha-horizontal-3{ 
+    margin-top: 45px;   
+    width: 100%;
+    border: 1px solid var(--cor6);
+    color: var(--cor6);
+}
+.p-cores{
+    padding-right: 15px;    
+    text-align: justify;
+    text-indent: 10px;
+    line-height: 1.8em;
+    font-size: 1.3em;
+    font-family: 'Kite One', sans-serif;
+    padding: 10px 50px;
+
+}
+.p-gradiente{
+    padding-right: 15px;
+    margin-top: 20px;
+    text-align: center;
+    text-indent: 10px;
+    line-height: 1.8em;
+    font-size: 1.3em;
+    font-family: 'Kite One', sans-serif;
+}
+#linha-horizontal-4{ 
+    margin-top: 45px;   
+    width: 100%;
+    border: 1px solid var(--cor6);
+    color: var(--cor6);
+}
 .imagem-logo-start{
-    width: 180px;
+    width: 120px;
     padding: 20px;
     display: flex;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
 }
-.p-gradiente{
-    height: auto;
-    display: flex;
-   
-    
-    font-family: 'Kite One', sans-serif;
-}
-
-  
 
