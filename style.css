@@ -130,6 +130,7 @@ li a:hover:not(.link-inicio){
 
 /* -----------------------TERMINA A PARTE DO MENU--------------------------------------------------------*/
 
+ 
 .container{
     min-width: 300px;
     max-width: 1200px;
@@ -141,6 +142,9 @@ li a:hover:not(.link-inicio){
     gap: 20px;
     flex-wrap:wrap;
     margin-top: 100px;
+}
+.container#ho01{
+    height: 97vh;
 }
 .h1-titulo-pincipal{    
     font-size: 11vh;
